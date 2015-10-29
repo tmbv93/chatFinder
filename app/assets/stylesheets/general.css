@@ -1,0 +1,198 @@
+.centered{
+    text-align: center !important;
+}
+
+.stretch-text{
+    text-align: justify  !important;
+}
+
+.small-text{
+    font-size: medium !important;
+}
+
+.medium-text{
+    font-size: 15px !important;
+}
+
+.large-text{
+    font-size: 18px !important;
+}
+
+.larger-text{
+    font-size: 28px !important;
+}
+
+.huge-text{
+    font-size: 42px !important;
+}
+
+.mini-text{
+    font-size: 12px !important;
+}
+
+.standard-text{
+    font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.pop{
+    margin-top: 2%;
+}
+
+.pop-static{
+    margin-top: 10px;
+}
+
+.pop-extra{
+    padding: 0;
+    margin: 12% 0 0 0;
+}
+
+.red{
+    background-color: lightpink;
+}
+
+.white{
+    background-color: white;
+}
+
+.theme-text{
+    color: #CB4029;
+}
+
+.theme-white-text{
+    color: white !important;
+}
+
+.light-grey-text{
+    color: lightgrey !important;
+}
+
+.green{
+    background-color: lightgreen;
+}
+
+.blue{
+    background-color: lightblue;
+}
+
+.yellow{
+    background-color: lightgoldenrodyellow;
+}
+
+.grey-boxed{
+    background-color: rgba(0,0,0,0.2);
+}
+
+.gray-font{
+    color: darkgrey;
+}
+
+.dark-gray-font{
+    color: darkslategray;
+}
+
+.theme-colors{
+    color: white;
+    background-color: #CB4029;
+}
+
+.theme-colors-faded{
+     color: white;
+     background-color: rgba(203, 64, 41, 0.8);
+ }
+
+.black-colors-faded{
+
+}
+
+.theme-red{
+    color: #CB4029;
+}
+
+.grow{
+    font-size: 24px;
+}
+
+.bare{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.fade-minimal{
+    opacity: 0.90;
+}
+
+.fade-weak{
+    opacity: 0.80;
+}
+
+.fade-medium{
+    opacity: 0.50;
+}
+
+.fade-strong{
+    opacity: 0.20;
+}
+
+.shadowed{
+    text-shadow: 1px 1px 20px #000000;
+}
+
+.semi-shadowed{
+    text-shadow: 1px 1px 20px rgba(0,0,0,0.4);
+}
+
+.rounded{
+    border-radius: 4px;
+}
+
+.ingress{
+    margin-left: 10%;
+}
+
+.page-fill{
+    margin-bottom: 500px;
+}
+
+.color-overlay{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
+
+.semi-padded{
+    padding: 4px 4px 4px 4px;
+}
+
+.padded{
+    padding: 8px 8px 8px 8px;
+}
+
+.spaced{
+    line-height: 200%;
+}
+
+.subtitle{
+    text-align: center;
+    font-size: small;
+    color: rgb(100,100,100);
+}
+
+.show{
+    visibility: visible !important;
+    display: block !important;
+}
+
+.hide{
+    display: none !important;
+    visibility: hidden !important;
+}
+
+.fill{
+    height: 25% !important;
+}
