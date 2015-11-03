@@ -1,40 +1,76 @@
 // Fint sted å legge CSS for forsiden
 // CSS kan ligge hvor som helst i denne mappen, så legg den der det er mest logisk.
 
+
 #mainField{
   background-color: lightcoral;
   width: 100%;
-  height: 60%;
-  margin: 0;
+  height: 80%;
   padding: 0;
-  text-align: center;
 }
 
-#logoContainer{
+#infoWrap>h1{
+  margin: 0;
+}
+
+#infoWrap>image{
+  margin: 0;
+}
+
+
+@media(orientation: portrait) {
+  #mainField{
+    text-align: center;
+  }
+
+  #infoWrap{
+   
+  }
+
+
+  #infoWrap>image{
+    float: left;
+  }
+
+  #formFieldWrap{
+    width: 80%;
+    display: inline-block;
+    margin: 5% 0 5% 0;
+  }
+
+}
+
+@media(orientation: landscape){
+  #mainField>h1{
+    padding-top: 30px;
+  }
+
+  #mainField{
+    background-color: lightcoral;
+    text-align: center;
+  }
+
+  #formFieldWrap{
+    width: 30%;
+    display: inline-block;
+    margin: 5% 0 5% 0;
+  }
+}
+
+#logoContainer {
   height: 6%;
   width: 6%;
-  margin: 0 0 0 47%;
-}
-
-#mainField>h1{
-  padding-top: 30px;
-  margin: 0;
-  text-align: center;
-}
-
-#formFieldWrap{
-  width: 30%;
-  display: inline-block;
-  margin: 5% 0 5% 0;
+  margin: 2% 0 0 47%;
 }
 
 #signupForm{
-  height: 40%;
+  height: 100%;
 }
 
 #signupForm>.sign-link>div{
   width: 100%;
-  height: 30%;
+  padding: 2% 0 2% 0;
+  height: 50%;
 }
 
 #signupForm>.sign-link>div>p{

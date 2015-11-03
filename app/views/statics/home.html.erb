@@ -12,9 +12,11 @@
     <%= form_tag sessions_path, id: 'loginForm' do %>
 
     <div id="mainField">
+      <div id="infoWrap">
       <h1>Smalltalk</h1>
-      <div id="logoContainer">
-        <%= image_tag 'http://cumbrianrun.co.uk/wp-content/uploads/2014/02/default-placeholder.png', class: 'centered', alt: 'logo' %>
+          <div id="logoContainer">
+            <%= image_tag 'http://cumbrianrun.co.uk/wp-content/uploads/2014/02/default-placeholder.png', class: 'centered', alt: 'logo' %>
+          </div>
       </div>
       <div id="formFieldWrap">
             <%= text_field_tag :username,nil, placeholder: 'Brukernavn' %>
@@ -24,8 +26,6 @@
 
 
     <div id="signupForm" class="centered">
-
-     <% #submit_tag 'LOGG INN', class: 'button expand', id: 'loginButton' %>
 
       <button class="sign-link yellow expand bare" id="loginButton" href="<%= new_user_path %>">
         <div>
