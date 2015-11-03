@@ -1,9 +1,3 @@
-<div id="logoWrap">
-  <h1>Title</h1>
-</div>
-
-<h1>Her havner forsiden</h1>
-
 
 <% if logged_in? %>
 
@@ -15,25 +9,36 @@
 
     <!-- Dette vises kun om du IKKE er logget inn -->
 
-    <div id="signUpForm" class="centered">
-        <%= link_to 'REGISTRER DEG', new_user_path, class: 'button' %>
-        <p>eller</p>
-        <%= link_to 'LOGG INN', sessions_new_path, class: 'button' %>
+    <%= form_tag sessions_path, id: 'loginForm' do %>
+
+    <div id="mainField">
+      <h1>Smalltalk</h1>
+      <div id="logoContainer">
+        <%= image_tag 'http://cumbrianrun.co.uk/wp-content/uploads/2014/02/default-placeholder.png', class: 'centered', alt: 'logo' %>
+      </div>
+      <div id="formFieldWrap">
+            <%= text_field_tag :username,nil, placeholder: 'Brukernavn' %>
+            <%= password_field_tag :password,nil, placeholder: 'Passord' %>
+      </div>
     </div>
 
+
+    <div id="signupForm" class="centered">
+
+     <% #submit_tag 'LOGG INN', class: 'button expand', id: 'loginButton' %>
+
+      <button class="sign-link yellow expand bare" id="loginButton" href="<%= new_user_path %>">
+        <div>
+            <p>LOGG INN</p>
+        </div>
+      </button>
+
+      <a class="sign-link" href="<%= new_user_path %>">
+        <div class="blue">
+          <p>REGISTRER DEG</p>
+        </div></a>
+    </div>
+
+    <% end  %>
+
 <% end %>
-
-<p>Dette dokumentet finner du i app/views/statics/home.html.erb</p>
-<p>Det kan redigeres som et vanlig html-dokument</p>
-<br>
-<p>CSS-filene ligger i app/assets/stylesheets</p>
-<p>Legg CSS i det dokumentet der det passer best inn</p>
-<p>Dette funker</p>
-
-<div class="show-for-medium-up">
-  Hvis Foundation fungerer vises ikke dette på mobil
-</div>
-
-<div class="show-for-small">
-Vises kun på mobil?
-</div>

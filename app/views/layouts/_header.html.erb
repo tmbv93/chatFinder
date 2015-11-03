@@ -2,14 +2,16 @@
 
   <section class="top-bar-section">
 
-    <!-- Right Nav Section -->
-    <ul class="right">
-      <li class="active"><%= link_to 'LOGG UT', logout_path %></li>
-    </ul>
-
-    <!-- Left Nav Section -->
+    <!-- Venstresiden -->
     <ul class="left">
       <li><%= link_to current_user.username, current_user %></li>
+      <li><%= link_to 'LOGG UT', logout_path %></li>
     </ul>
+
+    <!-- Høyresiden -->
+    <ul class="right">
+
+    </ul>
+
   </section>
 </nav>
