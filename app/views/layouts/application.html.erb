@@ -13,8 +13,7 @@
   </head>
 
   <body>
-
-    <%= yield %>
-
+    <%= render 'layouts/header' if logged_in? && !@exclude_header  %>
+        <%= yield %>
   </body>
 </html>
