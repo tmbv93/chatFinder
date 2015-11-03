@@ -4,12 +4,24 @@
 
 <h1>Her havner forsiden</h1>
 
-<div id="signUpForm" class="centered">
-    <%= link_to 'REGISTRER DEG', new_user_path, class: 'button' %>
-    <p>eller</p>
-    <%= link_to 'LOGG INN','#', class: 'button' %>
-</div>
 
+<% if logged_in? %>
+
+    <!-- Dette vises kun om du er logget inn -->
+    <p><b>Du er logget inn som <%= current_user.username %></b></p>
+    <%= link_to 'LOGG UT', logout_path, class: 'button' %>
+
+<% else %>
+
+    <!-- Dette vises kun om du IKKE er logget inn -->
+
+    <div id="signUpForm" class="centered">
+        <%= link_to 'REGISTRER DEG', new_user_path, class: 'button' %>
+        <p>eller</p>
+        <%= link_to 'LOGG INN', sessions_new_path, class: 'button' %>
+    </div>
+
+<% end %>
 
 <p>Dette dokumentet finner du i app/views/statics/home.html.erb</p>
 <p>Det kan redigeres som et vanlig html-dokument</p>

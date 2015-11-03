@@ -12,14 +12,27 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :username %><br>
+    <%= f.label :brukernavn %><br>
     <%= f.text_field :username %>
   </div>
   <div class="field">
-    <%= f.label :firstName %><br>
+    <%= f.label :fornavn %><br>
     <%= f.text_field :firstName %>
   </div>
+
+    <div class="field">
+      <%= f.label :passord %><br>
+      <%= f.password_field :password %>
+    </div>
+
+    <div class="field">
+      <%= f.label 'bekreft passord' %><br>
+      <%= f.password_field :password_confirmation %>
+    </div>
+
+
+
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Registrer bruker' %>
   </div>
 <% end %>
