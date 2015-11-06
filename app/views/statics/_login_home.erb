@@ -5,7 +5,7 @@
 
         <div class="row user">
             <div class="profile-wrap"><%= image_tag 'profile_placeholder.png', alt: 'profilbilde' %></div>
-            <p class="name-wrap"><%= link_to u.firstName, users_path %></p>
+            <p class="name-wrap"><%= link_to u.firstName, u %></p>
         </div>
 
     <% end %>
