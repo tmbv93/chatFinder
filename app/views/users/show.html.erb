@@ -1,14 +1,18 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Brukernavn:</strong>
-  <%= @user.username %>
-</p>
+<div id="avatarWrap" class="columns large-centered medium-centered small-centered">
+  <%= image_tag 'profile_placeholder.png', alt: 'mitt profilbilde' %>
+</div>
 
-<p>
-  <strong>Fornavn:</strong>
+<p id="username" class="centered">
   <%= @user.firstName %>
 </p>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<h4 class="centered">Interesser</h4>
+<div id="interestList" class="centered">
+  <p>Fotball</p>
+  <p>Gaming</p>
+  <p>Shopping</p>
+</div>
+
+<div class="large-4 medium-4 small-10 large-centered medium-centered small-centered columns centered"><%= link_to 'Start chat', users_path, class: 'button secondary' %></div>
+

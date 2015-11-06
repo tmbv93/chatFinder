@@ -1,3 +1,22 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#avatarWrap{
+  border: solid;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  margin-top: 5%;
+  overflow: hidden;
+}
+
+#avatarWrap>img{
+  height: 100%;
+}
+
+#username{
+  font-size: 30px;
+  margin: 2% 0 2% 0;
+}

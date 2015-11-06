@@ -14,12 +14,10 @@ class User < ActiveRecord::Base
     else return nil
 
     end
-
   end
 
   def self.nearby_users(my_username)
     User.all.where.not(username: my_username)
   end
-
 
 end
