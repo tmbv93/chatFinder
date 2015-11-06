@@ -17,8 +17,8 @@ class User < ActiveRecord::Base
 
   end
 
-  def self.nearby_users(my_first_name)
-    User.all.where.not(firstName: my_first_name)
+  def self.nearby_users(my_username)
+    User.all.where.not(username: username)
   end
 
 
