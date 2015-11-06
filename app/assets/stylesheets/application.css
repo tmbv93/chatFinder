@@ -19,4 +19,9 @@
 body, html{
     margin: 0 !important;
     padding: 0 !important;
+    background-color: #C04747;
+}
+
+h1,p{
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }

@@ -1,0 +1,10 @@
+@media(orientation: portrait) {
+
+    #logoContainer {
+        height: 120px;
+        width: 120px;
+        margin: 30% 0 0 ;
+        display: inline-block;
+    }
+
+}

@@ -9,36 +9,30 @@
 
     <!-- Dette vises kun om du IKKE er logget inn -->
 
-    <%= form_tag sessions_path, id: 'loginForm' do %>
-
     <div id="mainField">
       <div id="infoWrap">
-      <h1>Smalltalk</h1>
-          <div id="logoContainer">
-            <%= image_tag 'http://cumbrianrun.co.uk/wp-content/uploads/2014/02/default-placeholder.png', class: 'centered', alt: 'logo' %>
-          </div>
-      </div>
-      <div id="formFieldWrap">
-            <%= text_field_tag :username,nil, placeholder: 'Brukernavn' %>
-            <%= password_field_tag :password,nil, placeholder: 'Passord' %>
+        <div id="logoContainer">
+          <%= image_tag 'logo.png', alt: 'smalltalk logo' %>
+        </div>
+        <h1 id="title">SmallTalk</h1>
       </div>
     </div>
 
 
     <div id="signupForm" class="centered">
 
-      <button class="sign-link yellow expand bare" id="loginButton" href="<%= new_user_path %>">
-        <div>
-            <p>LOGG INN</p>
+      <a class="sign-link" href="<%= new_session_path %>">
+        <div id="loginButton">
+            <p>Logg inn</p>
         </div>
-      </button>
+      </a>
 
       <a class="sign-link" href="<%= new_user_path %>">
-        <div class="blue">
-          <p>REGISTRER DEG</p>
-        </div></a>
+        <div id="registerButton">
+          <p>Registrer deg</p>
+        </div>
+      </a>
+
     </div>
 
     <% end  %>
-
-<% end %>

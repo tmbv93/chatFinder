@@ -3,85 +3,58 @@
 
 
 #mainField{
-  background-color: lightcoral;
+  background-color: #C04747;
   width: 100%;
-  height: 80%;
+  height: 75%;
   padding: 0;
+  text-align: center;
+}
+
+#infoWrap{
+  padding-top: 2%;
 }
 
 #infoWrap>h1{
+  color: white;
   margin: 0;
-}
-
-#infoWrap>image{
-  margin: 0;
-}
-
-
-@media(orientation: portrait) {
-  #mainField{
-    text-align: center;
-  }
-
-  #infoWrap{
-   
-  }
-
-
-  #infoWrap>image{
-    float: left;
-  }
-
-  #formFieldWrap{
-    width: 80%;
-    display: inline-block;
-    margin: 5% 0 5% 0;
-  }
-
-}
-
-@media(orientation: landscape){
-  #mainField>h1{
-    padding-top: 30px;
-  }
-
-  #mainField{
-    background-color: lightcoral;
-    text-align: center;
-  }
-
-  #formFieldWrap{
-    width: 30%;
-    display: inline-block;
-    margin: 5% 0 5% 0;
-  }
-}
-
-#logoContainer {
-  height: 6%;
-  width: 6%;
-  margin: 2% 0 0 47%;
 }
 
 #signupForm{
-  height: 100%;
+  height: 25%;
 }
 
 #signupForm>.sign-link>div{
   width: 100%;
-  padding: 2% 0 2% 0;
   height: 50%;
+  display: table;
 }
 
 #signupForm>.sign-link>div>p{
-  font-size: 25px;
-  padding-top: 2%;
+  font-size: 200%;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 #loginButton{
-  color: #666;
+  background-color: #001E29;
 }
 
-#loginButton:hover{
-  color:white;
+#loginButton>p{
+  color: white;
+}
+
+#loginButton>p:hover{
+  color: #C04747;
+}
+
+#registerButton{
+  background-color: #DDDDDD;
+}
+
+#registerButton>p{
+  color: black;
+}
+
+#registerButton>p:hover{
+  color: #C04747;
 }
