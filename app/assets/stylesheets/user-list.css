@@ -1,0 +1,24 @@
+#userList{
+
+}
+
+.user:nth-child(even){
+    background-color: lightgrey;
+}
+
+.user{
+    display: table;
+}
+
+.profile-wrap{
+    width: 100px;
+    height: 100px;
+    display: table-cell;
+}
+
+.name-wrap{
+    font-size: 30px;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 30%;
+}

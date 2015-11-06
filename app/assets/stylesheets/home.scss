@@ -3,11 +3,16 @@
 
 
 #mainField{
-  background-color: #C04747;
   width: 100%;
   height: 75%;
   padding: 0;
   text-align: center;
+}
+
+#signInPortal{
+  width: 100%;
+  height: 100%;
+  background-color: #C04747;
 }
 
 #infoWrap{
@@ -18,6 +23,7 @@
   color: white;
   margin: 0;
 }
+
 
 #signupForm{
   height: 25%;

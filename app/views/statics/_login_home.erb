@@ -1,0 +1,12 @@
+<h1 id="userListTitle" class="centered">Personer i nærheten:</h1>
+
+<div id="userList">
+    <% nearby_users.each do |u| %>
+
+        <div class="row user">
+            <div class="profile-wrap"><%= image_tag 'profile_placeholder.png', alt: 'profilbilde' %></div>
+            <p class="name-wrap"><%= link_to u.firstName, users_path %></p>
+        </div>
+
+    <% end %>
+</div>

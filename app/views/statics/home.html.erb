@@ -2,12 +2,13 @@
 <% if logged_in? %>
 
     <!-- Dette vises kun om du er logget inn -->
-    <p><b>Du er logget inn som <%= current_user.username %></b></p>
-    <%= link_to 'LOGG UT', logout_path, class: 'button' %>
+    <%= render 'login_home' %>
 
 <% else %>
 
     <!-- Dette vises kun om du IKKE er logget inn -->
+
+    <div id="signInPortal">
 
     <div id="mainField">
       <div id="infoWrap">
@@ -33,6 +34,7 @@
         </div>
       </a>
 
+    </div>
     </div>
 
     <% end  %>
