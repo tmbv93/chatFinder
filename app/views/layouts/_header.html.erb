@@ -1,22 +1,20 @@
 <nav class="top-bar" data-topbar role="navigation">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="#">SmallTalk</a></h1>
+    </li>
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Meny</span></a></li>
+  </ul>
 
   <section class="top-bar-section">
-
-    <!-- Venstresiden -->
-    <ul class="left">
-      <li><%= link_to current_user.username, current_user %></li>
-    </ul>
-
-    <ul class="title-area">
-      <li class="name">
-        <h1><a href="#">SmallTalk</a></h1>
-      </li>
-    </ul>
-
-    <!-- Høyresiden -->
+    <!-- Right Nav Section -->
     <ul class="right">
-      <li><%= link_to 'Logg ut', logout_path %></li>
+      <li><%= link_to 'LOGG UT', logout_path %></li>
+
     </ul>
 
+    <!-- Left Nav Section -->
+    <ul class="left">
+    </ul>
   </section>
 </nav>
