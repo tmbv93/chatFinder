@@ -1,0 +1,11 @@
+nav.top-bar {
+    text-align:center;
+}
+section.top-bar-section {
+    display: inline-block;
+}
+
+#topBarTitle{
+    font-size: 20px;
+    color: white;
+}

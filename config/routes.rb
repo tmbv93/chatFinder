@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :interests
+  resources :topics
+  resources :interests
   get 'sessions/new'
   resources :users
   resources :sessions
