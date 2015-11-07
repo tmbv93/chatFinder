@@ -4,8 +4,6 @@ class User < ActiveRecord::Base
   validates_presence_of :password, on: :create
   validates_confirmation_of :password
 
-  has_many :topics, through: :interests
-
   def self.authenticate(username, password)
 
     user = User.find_by_username(username)
