@@ -1,11 +1,17 @@
 <%= form_tag sessions_path do %>
-    <p>
-      <%= label_tag :brukernavn %><br />
-      <%= text_field_tag :username, params[:username] %>
-    </p>
-    <p>
-      <%= label_tag :passord %><br />
-      <%= password_field_tag :password %>
-    </p>
-    <%= submit_tag 'LOGG INN', class: 'button info' %>
+    <div class="row">
+      <div class="large-12 columns">
+          <%= text_field_tag :username, nil, placeholder: 'Brukernavn' %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns">
+        <%= password_field_tag :password,nil, placeholder: 'Passord' %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns">
+        <%= submit_tag 'LOGG INN', class: 'button info expand' %>
+      </div>
+    </div>
 <% end %>

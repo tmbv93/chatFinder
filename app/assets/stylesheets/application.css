@@ -22,5 +22,9 @@ body, html{
 }
 
 h1,p{
-    font-family: "Arial", cursive, sans-serif;
+    font-family: "Helvetica Neue", "Arial", cursive, sans-serif;
+}
+
+input[text]{
+    color: white;
 }
