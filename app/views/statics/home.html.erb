@@ -9,32 +9,19 @@
     <!-- Dette vises kun om du IKKE er logget inn -->
 
     <div id="signInPortal">
+      <div id="logoWrap" class="columns centered">
 
-    <div id="mainField">
-      <div id="infoWrap">
-        <div id="logoContainer">
-          <%= image_tag 'logo.png', alt: 'smalltalk logo' %>
-        </div>
-        <h1 id="title">SmallTalk</h1>
       </div>
-    </div>
-
-
-    <div id="signupForm" class="centered">
-
-      <a class="sign-link" href="<%= new_session_path %>">
-        <div id="loginButton">
-            <p>Logg inn</p>
+      <div id="infoWrap" class="columns large-6 medium-6">
+        <p class="theme-white-text large-text">Her kan vi ha infotekst</p>
+      </div>
+      
+      <div id="loginWrap" class="columns large-6 medium-6"><p class="theme-white-text large-text">Placeholder</p>
+        <div id="loginBox">
+          <%= render 'sessions/form' %>
         </div>
-      </a>
-
-      <a class="sign-link" href="<%= new_user_path %>">
-        <div id="registerButton">
-          <p>Registrer deg</p>
-        </div>
-      </a>
+      </div>
 
     </div>
-    </div>
 
-    <% end  %>
+<% end  %>
