@@ -24,7 +24,3 @@ body, html{
 h1,p{
     font-family: "Helvetica Neue", "Arial", cursive, sans-serif;
 }
-
-input[text]{
-    color: white;
-}
