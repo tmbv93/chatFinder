@@ -26,13 +26,19 @@
 @media(orientation: landscape){
 
   #logoWrap {
-    height: 200px;
+    height: 25vh;
+    margin-bottom: 100px;
   }
 
   #infoWrap{
   }
 
   #loginWrap{
+  }
+
+  #bannerLogo{
+    height: inherit;
+    width: 50%;
   }
 }
 
@@ -41,15 +47,20 @@
     height: 20vh;
   }
 
-  #loginWrap{
-    height: 80vh;
+  #infoWrap{
   }
 
-  #infoWrap{
-    height: 80vh;
+  #loginWrap{
+  }
+
+  #bannerLogo{
+    height: inherit;
+    width: inherit;
   }
 
 }
+
+
 
 
 #signupForm{
