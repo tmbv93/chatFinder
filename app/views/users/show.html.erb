@@ -1,18 +1,37 @@
+<div class="row user-wrap">
 
-<div id="avatarWrap" class="columns large-centered medium-centered small-centered">
-  <%= image_tag 'profile_placeholder.png', alt: 'mitt profilbilde' %>
+  <div class="columns large-6 medium-6">
+
+      <div id="avatarWrap" class="columns large-centered medium-centered small-centered">
+          <%= image_tag 'profile_placeholder.png', alt: 'mitt profilbilde' %>
+        </div>
+
+    <hr class="show-for-small-only">
+
+    <p id="username" class="centered larger-text">
+      <%= @user.firstName %>
+    </p>
+
+  </div>
+
+
+<div class="columns large-6 medium-6">
+
+  <hr class="show-for-small-only">
+
+  <h2 class="centered">Interesser</h2>
+
+    <div id="interestList" class="centered">
+      <p class="large-text">Fotball</p>
+      <p class="large-text">Gaming</p>
+      <p class="large-text">Shopping</p>
+    </div>
+
+
+
+
+<div class="large-4 medium-4 small-10 large-centered medium-centered small-centered columns centered"><%= link_to 'START CHAT', test_over_path, class: 'button secondary expand bold' %></div>
+
 </div>
 
-<p id="username" class="centered">
-  <%= @user.firstName %>
-</p>
-
-<h4 class="centered">Interesser</h4>
-<div id="interestList" class="centered">
-  <p>Fotball</p>
-  <p>Gaming</p>
-  <p>Shopping</p>
 </div>
-
-<div class="large-4 medium-4 small-10 large-centered medium-centered small-centered columns centered"><%= link_to 'Start chat', test_over_path, class: 'button secondary' %></div>
-
