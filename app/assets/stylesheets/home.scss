@@ -11,16 +11,15 @@
 #signInPortal{
   width: 100%;
   height: 100%;
-  background: url('https://upload.wikimedia.org/wikipedia/commons/3/3a/London_from_a_hot_air_balloon.jpg');
+  background: url('http://4.bp.blogspot.com/-runJZS0P6Ko/U1WMNzIME1I/AAAAAAAAH-o/BcEoO1re5DE/s1600/Oslo+mot+Ekeberg+IMG_9422.jpg');
   background-size: cover;
 }
 
 #loginBox {
-  background: rgba(255,255,255,0.98);
-  border: 1px solid #ddd;
+  background: rgba(50,50,50,0.68);
   padding: 1vw;
+  border: solid 1px grey;
   border-radius: 3px;
-  box-shadow: 10px 10px 6px rgba(0,0,0,0.3);
 }
 
 @media(orientation: landscape){

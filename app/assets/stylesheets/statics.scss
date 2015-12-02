@@ -13,3 +13,13 @@
   font-size: xx-large;
   color: indianred;
 }
+
+.form-wrap{
+
+}
+
+@media(orientation: landscape){
+  .form-wrap{
+    margin-top: 10%;
+  }
+}
