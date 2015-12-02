@@ -15,6 +15,13 @@
   height: 100%;
 }
 
+@media(orientation: landscape){
+
+  .user-wrap{
+    margin-top: 10%;
+  }
+}
+
 #username {
   font-size: 20px;
   margin: 2% 0 2% 0;
