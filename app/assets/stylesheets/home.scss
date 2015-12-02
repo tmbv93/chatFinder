@@ -11,8 +11,8 @@
 #signInPortal{
   width: 100%;
   height: 100%;
-  background: url('http://4.bp.blogspot.com/-runJZS0P6Ko/U1WMNzIME1I/AAAAAAAAH-o/BcEoO1re5DE/s1600/Oslo+mot+Ekeberg+IMG_9422.jpg');
-  background-size: cover;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/8/8e/Oslo_at_night.jpg');
+  background-size: 100% 100%;
 }
 
 #loginBox {
@@ -22,11 +22,16 @@
   border-radius: 3px;
 }
 
+#logoWrap{
+  border-bottom: solid 1px darkblue;
+  background: rgba(0,0,0, 0.8);
+}
+
 @media(orientation: landscape){
 
   #logoWrap {
-    height: 25vh;
-    margin-bottom: 100px;
+    margin: 0 0 30vh 0;
+    padding: 1vh 0 1vh 0;
   }
 
   #infoWrap{
@@ -36,14 +41,12 @@
   }
 
   #bannerLogo{
-    height: inherit;
-    width: 50%;
+    height: 8vh;
   }
 }
 
 @media(orientation: portrait){
   #logoWrap {
-    height: 20vh;
   }
 
   #infoWrap{

@@ -1,6 +1,4 @@
-// Place all the styles related to the statics controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+// Error messages
 
 .notice-wrap{
   border-top: solid red;
@@ -14,12 +12,28 @@
   color: indianred;
 }
 
-.form-wrap{
 
-}
+// Forms
 
 @media(orientation: landscape){
   .form-wrap{
     margin-top: 10%;
   }
+}
+
+input[type=text], input[type=password], input[type=password_confirmation] {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #DDDDDD;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=password_confirmation]:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(81, 203, 238, 1);
 }
