@@ -8,17 +8,19 @@
   text-align: center;
 }
 
+#introText{
+  font-size: larger;
+}
+
 #signInPortal{
   width: 100%;
   height: 100%;
-  background: url('https://upload.wikimedia.org/wikipedia/commons/8/8e/Oslo_at_night.jpg');
-  background-size: 100% 100%;
 }
 
 #loginBox {
   background: rgba(50,50,50,0.68);
   padding: 1vw;
-  border: solid 1px grey;
+  border: solid 1px;
   border-radius: 3px;
 }
 
@@ -43,6 +45,11 @@
   #bannerLogo{
     height: 8vh;
   }
+
+  #signInPortal{
+    background-size: 100% 100%;
+    background-image: url('background.jpg');
+  }
 }
 
 @media(orientation: portrait){
@@ -58,6 +65,11 @@
   #bannerLogo{
     height: inherit;
     width: inherit;
+  }
+
+  #signInPortal{
+    background-size: cover;
+    background-image: url('background_mobile.jpg');
   }
 
 }
