@@ -1,20 +1,10 @@
 // Fint sted å legge CSS for forsiden
 // CSS kan ligge hvor som helst i denne mappen, så legg den der det er mest logisk.
 
-#mainField{
-  width: 100%;
-  height: 75%;
-  padding: 0;
-  text-align: center;
-}
-
-#introText{
-  font-size: larger;
-}
 
 #signInPortal{
-  width: 100%;
-  height: 100%;
+  width: inherit;
+  height: inherit;
 }
 
 #loginBox {
@@ -35,12 +25,6 @@
     padding: 1vh 0 1vh 0;
   }
 
-  #infoWrap{
-  }
-
-  #loginWrap{
-  }
-
   #bannerLogo{
     height: 8vh;
   }
@@ -52,14 +36,6 @@
 }
 
 @media(orientation: portrait){
-  #logoWrap {
-  }
-
-  #infoWrap{
-  }
-
-  #loginWrap{
-  }
 
   #bannerLogo{
     height: inherit;
@@ -72,9 +48,6 @@
   }
 
 }
-
-
-
 
 #signupForm{
   height: 25%;

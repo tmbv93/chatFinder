@@ -1,3 +1,6 @@
+/* Nyttige CSS klasser */
+
+
 .centered{
     text-align: center !important;
 }
@@ -51,71 +54,10 @@
     margin: 12% 0 0 0;
 }
 
-.red{
-    background-color: lightpink;
-}
-
-.white{
-    background-color: white;
-}
-
-.theme-text{
-    color: #CB4029;
-}
-
 .theme-white-text{
     color: white !important;
 }
 
-.light-grey-text{
-    color: lightgrey !important;
-}
-
-.green{
-    background-color: lightgreen;
-}
-
-.blue{
-    background-color: lightblue;
-}
-
-.yellow{
-    background-color: lightgoldenrodyellow;
-}
-
-.grey-boxed{
-    background-color: rgba(0,0,0,0.2);
-}
-
-.gray-font{
-    color: darkgrey;
-}
-
-.dark-gray-font{
-    color: darkslategray;
-}
-
-.theme-colors{
-    color: white;
-    background-color: #CB4029;
-}
-
-.theme-colors-faded{
-     color: white;
-     background-color: rgba(203, 64, 41, 0.8);
- }
-
-.black-colors-faded{
-
-}
-
-.theme-red{
-    color: #CB4029;
-}
-
-.grow{
-    font-size: 24px;
-}
 
 .bare{
     padding: 0 !important;
